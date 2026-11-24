@@ -6,10 +6,10 @@ Esta carpeta es un **repo git propio** (como lo fue `memoria_french_deputies` pa
 
 ## Conectar con GitHub y Overleaf
 
-1. Crear en GitHub un repo vacío y **privado**, por ejemplo `TinSolis/tesis_mds_manuscrito`.
+1. Crear en GitHub un repo vacío y **privado**, por ejemplo `TinSolis/tesis_magister_mds_manuscrito`.
 2. Desde esta carpeta:
    ```
-   git remote add origin git@github.com:TinSolis/tesis_mds_manuscrito.git
+   git remote add origin git@github.com:TinSolis/tesis_magister_mds_manuscrito.git
    git push -u origin main
    ```
 3. En Overleaf: **New Project → Import from GitHub** y elegir el repo. En **Menu → Settings**: *Compiler* = `pdfLaTeX`, *Main document* = `main.tex`.
@@ -30,4 +30,4 @@ Esta carpeta es un **repo git propio** (como lo fue `memoria_french_deputies` pa
 | `umemoria.cls`, `umemoria-LICENSE` | Clase LaTeX de la FCFM (no editar) |
 | `imagenes/` | Escudo U. de Chile y logo FCFM para la portada |
 
-Las secciones siguen la propuesta de `../seminario_1/03_entrega2_inscripcion_tema/propuesta_tesis.md`. Para la Entrega 3 (3-dic-2026) basta con portada y secciones enunciadas, más los borradores que haya; el PDF entregado se guarda en `../seminario_1/05_entrega3_avance_manuscrito/`.
+Las secciones siguen la propuesta de `../seminario_1/entrega_2_inscripcion_tema/propuesta_tesis.md`. Para la Entrega 3 (3-dic-2026) basta con portada y secciones enunciadas, más los borradores que haya; el PDF entregado se guarda en `../seminario_1/entrega_3_avance_manuscrito/`.
