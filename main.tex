@@ -1,0 +1,68 @@
+% Plantilla FCFM/UChile (clase umemoria, dccuchile/memoria-tesis-latex).
+% Overleaf: compilador pdfLaTeX, documento principal main.tex.
+\documentclass{umemoria}
+
+\depto{Departamento de Ciencias de la Computación}
+\author{Agustín Sebastián Solís Meza}
+\title{Análisis multimodal del discurso político y su relación con el voto parlamentario: postura y valores en texto y archivos audiovisuales (Asamblea Nacional francesa)}
+
+% Tesis de magíster (sin \memoria: no es doble titulación).
+\tesis{Magíster en Ciencia de Datos}
+
+\guia{Valentin Clement Barriere}
+\coguia{Franziska Christl Wagner}
+% \comision{Nombre Apellido Apellido,Nombre Apellido Apellido} % nombre y dos apellidos
+
+% \auspicio{CENIA} % incluir si el trabajo recibe financiamiento
+
+\anho{2026}
+
+% La clase umemoria ya carga inputenc (utf8), geometry, babel (spanish), graphicx, etc.
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% «Anexo»/«Anexos» en vez de «Apéndice» (requisito Biblioteca).
+\addto\captionsspanish{%
+  \renewcommand{\appendixname}{Anexo}%
+  \renewcommand{\appendixtocname}{Anexos}%
+}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\begin{resumen}
+% Se redacta al final (máximo una página).
+\end{resumen}
+
+% \begin{thanks}
+% \end{thanks}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+% Última página preliminar, antes de la introducción (requisito Biblioteca).
+\chapter*{Declaración de uso de inteligencia artificial}
+% Por redactar.
+
+\mainmatter
+
+\input{capitulos/cap1_introduccion.tex}
+\input{capitulos/cap2_marco_teorico.tex}
+\input{capitulos/cap3_datos.tex}
+\input{capitulos/cap4_metodologia.tex}
+\input{capitulos/cap5_resultados_preliminares.tex}
+\input{capitulos/cap6_plan_de_trabajo.tex}
+\input{capitulos/cap7_conclusiones.tex}
+
+\nocite{*} % quitar cuando los capítulos ya citen con \cite
+\bibliographystyle{plain}
+\bibliography{bibliografia}
+
+\end{document}
